@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS client;
+
+CREATE TABLE client(
+	document varchar(8),
+    lastName varchar(20),
+    name varchar(20),
+    address varchar(30),
+    phone varchar(11),
+    PRIMARY KEY(document)
+
+);
+
+INSERT INTO client(document, lastName, name, address, phone) VALUES('22345678', 'Peerez', 'Marcos', 'Colon 123', '4545454');
+INSERT INTO client(document, lastName, name, address, phone) VALUES('23222222', 'Garcia', 'Ana', 'Avellana 1345', '4252652');
+INSERT INTO client(document, lastName, name, address, phone) VALUES('20544545', 'Lopez', 'Susana', 'Urquiza 344', '4522525');
+INSERT INTO client(document, lastName, name, address, phone) VALUES('35454545', 'Lopez', 'Susana', 'Urquiza 344', '4522525');
+
+INSERT INTO client(document, lastName, name, address, phone) VALUES('12345678', 'Ortiz', 'Javier', 'Francisco 409', '7681081659');
+INSERT INTO client(document, lastName, name, address, phone) VALUES('87654321', 'Ortiz', 'Javier', 'Obregon 456', '8114568795');

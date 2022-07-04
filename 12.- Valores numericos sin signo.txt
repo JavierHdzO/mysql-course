@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS Books;
+
+CREATE TABLE Books(
+	id integer UNSIGNED AUTO_INCREMENT,
+    title varchar(30) NOT NULL,
+    author varchar(30),
+    editorial varchar(20),
+    price float,
+    amount integer unsigned,
+    PRIMARY KEY(id)
+);
+
+DESCRIBE Books;

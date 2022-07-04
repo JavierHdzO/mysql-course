@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS  Employee;
+
+CREATE TABLE Employee(
+	name varchar(40),
+    document varchar(10),
+    genre varchar(1),
+    address varchar(45),
+    salary float
+);
+
+DESCRIBE Employee;
+
+INSERT INTO Employee(name, document, genre, address, salary) VALUES('Juan Perez','22345678','m','Sarmiento 123', 300);
+INSERT INTO Employee(name, document, genre, address, salary) VALUES('Ana Acosta','24345678','f','Colon 123',500);
+INSERT INTO Employee(name, document, genre, address, salary) VALUES('Marcos Torres', '27345678','m','Urquiza 479',800);
+
+SELECT * FROM Employee;

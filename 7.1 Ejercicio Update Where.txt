@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS Items;
+
+CREATE TABLE Items(
+	id integer,
+    name varchar(20),
+    description varchar(20),
+    price float,
+    amount integer
+);
+
+DESCRIBE Items;
+
+INSERT INTO Items(id, name, description, price, amount) VALUES(1,'Impresora', 'Epson Stylus C45', 400.8, 20);
+INSERT INTO Items(id, name, description, price, amount) VALUES(2,'Impresora', 'Epson Stylus C85', 500, 30);
+INSERT INTO Items(id, name, description, price, amount) VALUES(3,'Monitor', 'Samsumg 14', 800, 10);
+INSERT INTO Items(id, name, description, price, amount) VALUES(4, 'Teclado', 'Ingles Bisual', 100, 50);
+INSERT INTO Items(id, name, description, price, amount) VALUES(5,'Teclado', 'Español Bisual', 90, 30);
+
+SELECT * FROM Items;
+UPDATE Items SET price=400 WHERE description='Epson Stylus C45';
+
+SELECT * FROM Items;
+UPDATE Items SET amount=100 WHERE name='Teclado';
+
+SELECT * FROM Items;
+UPDATE Items SET amount=100 WHERE amount=1000;
+
+SELECT * FROM Items;

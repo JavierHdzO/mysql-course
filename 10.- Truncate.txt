@@ -1,0 +1,31 @@
+DROP TABLE IF EXISTS Books;
+
+
+CREATE TABLE Books(
+	id integer AUTO_INCREMENT,
+    title varchar(30),
+    author varchar(30),
+    editorial varchar(30),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Books(title, author, editorial) VALUES('Martin Fierro', 'Jose Hernandez', 'Planeta');
+INSERT INTO Books(title, author, editorial) VALUES('Aprenda PHP', 'Mario Molina', 'Emece');
+INSERT INTO Books(title, author, editorial) VALUES('Cervantes y el quijote', 'Borges', 'Paidos');
+INSERT INTO Books(title, author, editorial) VALUES('Matematicas estas ahi', 'Paenza', 'Paidos');
+INSERT INTO Books(title, author, editorial) VALUES('El Aleph', 'Borges', 'Emece');
+
+
+DELETE FROM Books;
+
+SELECT * FROM Books;
+
+INSERT INTO Books(title, author, editorial) VALUES('Antologia Poetica', 'Borges', 'Emece');
+
+SELECT * FROM Books;
+
+TRUNCATE TABLE Books;
+
+INSERT INTO Books(title, author, editorial) VALUES('Antologia Poetica', 'Borges', 'Emece');
+
+SELECT * FROM Books;

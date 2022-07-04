@@ -1,0 +1,41 @@
+DROP TABLE IF EXISTS Movies;
+
+CREATE TABLE Movies(
+	id integer auto_increment,
+    title varchar(50) not null,
+    actor varchar(20),
+    leng integer,
+    PRIMARY KEY(id)
+);
+
+DESCRIBE Movies;
+
+INSERT INTO Movies(title, actor, leng) VALUES('Mision Imposible', 'Tom Cruise', 120);
+INSERT INTO Movies(title, actor, leng) VALUES('Harry Potter y la piedra', 'Daniel R',180);
+INSERT INTO Movies(title, actor, leng) VALUES('Harry Potter y la camara secreta', 'Daniel R', 190);
+INSERT INTO Movies(title, actor, leng) VALUES('Mision Imposible 2', 'Tom Cruise', 150);
+INSERT INTO Movies(title, actor, leng) VALUES('Titanic', 'L. Di Caprio', 220);
+INSERT INTO Movies(title, actor, leng) VALUES('Mujer bonita', 'R Gere-J Roberts', 200);
+
+SELECT * FROM Movies;
+
+INSERT INTO Movies(title, actor, leng) VALUES('Mr. Jonh', null, null);
+
+INSERT INTO Movies(id, title, actor, leng) VALUES(0, '', '', 0);
+
+SELECT * FROM movies
+	WHERE id = 0;
+    
+UPDATE Movies SET leng = 120
+	WHERE leng is null;
+    
+UPDATE Movies SET actor = 'Desconocido'
+	WHERE actor is null;
+    
+SELECT * FROM Movies;
+
+UPDATE Movies SET actor = 'Desconocido'
+	WHERE actor = '';
+  
+DELETE FROM Movies
+	WHERE title = '';

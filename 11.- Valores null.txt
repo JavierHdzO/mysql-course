@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS Books;
+
+CREATE TABLE Books(
+	id integer AUTO_INCREMENT,
+    title varchar(30) NOT NULL,
+    author varchar(30),
+    editorial varchar(30),
+    price float,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Books(title, author, editorial, price) VALUES('El Aleph', 'Borges', 'Planeta', null);
+INSERT INTO Books(title, author, editorial, price) VALUES('Matematicas estas ahi', 'Paenza', 'Paidos', 0);
+INSERT INTO Books(title, author, editorial, price) VALUES('Martin Fierro', 'Jose Hernandez','', 22.55);
+INSERT INTO Books(title, author, editorial, price) VALUES('Harry Potter y la piedra filosofal', 'J.K. Rowlling', null, 20.4);
+
+SELECT * FROM Books
+	WHERE price is null;
+    
+SELECT * FROM Books
+	WHERE price = 0;
+    
+SELECT * FROM Books
+	WHERE editorial is null;
+    
+SELECT * FROM Books 
+	WHERE editorial = '';
+

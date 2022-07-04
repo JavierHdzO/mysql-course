@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS Book;
+
+CREATE TABLE Book(
+	title varchar(100),
+    author varchar(30),
+    editorial varchar(15),
+    price float,
+    amount integer
+);
+
+INSERT INTO Book(title, author, editorial, price, amount) VALUES('El Aleph','Borges','Emece',45.50,100);
+INSERT INTO Book(title, author, editorial, price, amount) VALUES('Alicia en el paiss de las maravillas', 'Lewis Carroll', 'Planeta',25,200);
+INSERT INTO Book(title, author, editorial, price, amount) VALUES('Matematica estas ahi', 'Paenza', 'Planeta', 15.0,200);
+
+
+SELECT title,price FROM Book;
+
+SELECT editorial,amount FROM Book;
+
+SELECT * FROM Book;

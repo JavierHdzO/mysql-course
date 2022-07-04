@@ -1,0 +1,31 @@
+DROP TABLE IF EXISTS Medicine;
+
+CREATE TABLE Medicine(
+	id integer AUTO_INCREMENT,
+    name varchar(30),
+    lab varchar(30),
+    price float,
+    amount integer,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Sertal', 'Roche', 5.2, 100);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Buscapina', 'Roche', 4.10, 200);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Amoxidal 500', 'Bayer', 15.6, 100);
+
+DELETE FROM Medicine;
+
+SELECT * FROM Medicine;
+
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Sertal', 'Roche', 5.2, 100);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Amoxidal 500', 'Bayer', 15.6, 100);
+
+SELECT * FROM Medicine;
+
+TRUNCATE Medicine;
+
+SELECT * FROM Medicine;
+
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Buscapina', 'Roche', 4.1, 200);
+
+SELECT * FROM Medicine;

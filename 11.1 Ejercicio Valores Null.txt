@@ -1,0 +1,55 @@
+DROP TABLE IF EXISTS Medicine;
+
+CREATE TABLE Medicine(
+	id integer AUTO_INCREMENT,
+    name varchar(30) NOT NULL,
+    lab varchar(30),
+    price float,
+    amount integer not null,
+    PRIMARY KEY(id)
+);
+
+DESCRIBE Medicine;
+
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Sertal gotas', 'Roche', 5.2, 100);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Sertal Compuesto', 'Roche', 7.1, 150);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Buscapina', 'Roche', null, 200);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Amoxidal 500', 'Bayer', 15.6, 0);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Amoxidal jarabe', 'Bayer', 25, 120);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Amoxinil', null, 25, 120);
+INSERT INTO Medicine(name, lab, price, amount) VALUES('Bayaspirina', '', 0, 150);
+
+SELECT * FROM Medicine;
+
+SELECT * FROM medicine
+	WHERE lab is null;
+    
+SELECT * FROM medicine
+	WHERE lab = '';
+    
+SELECT * FROM medicine
+	WHERE price = 0;
+    
+SELECT * FROM Medicine
+	WHERE price is null;
+    
+/*INSERT INTO Medicine(name, lab, price, amount) VALUES(null, 'Bayer', 10.2, 100);*/
+
+/*INSERT INTO Medicine(name, lab, price, amount) VALUES('Benadryl comprimidos', 'Bayer', 10.2, null );*/
+
+/*INSERT INTO Medicine(id, name, lab, price, amount) VALUES(null, 'Benadryl comprimidos', 'Bayer', 10.2, null);*/
+
+SELECT * FROM medicine;
+
+SELECT * FROM medicine
+	WHERE price != 0;
+    
+SELECT * FROM medicine
+	WHERE price is not null;
+    
+SELECT * FROM medicine
+	WHERE lab != "";
+    
+SELECT * FROM medicine
+	WHERE lab IS NOT NULL;
+	

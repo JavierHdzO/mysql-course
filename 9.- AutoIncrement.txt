@@ -1,0 +1,32 @@
+DROP TABLE IF EXISTS Books;
+
+CREATE TABLE Books(
+	id integer AUTO_INCREMENT,
+    title varchar(30),
+    author varchar(30),
+    editorial varchar(30),
+    PRIMARY KEY (id)
+);
+
+DESCRIBE Books;
+
+INSERT INTO books(title, author, editorial) VALUES('El aleph', 'Borges', 'Planeta');
+
+SELECT * FROM books;
+
+INSERT INTO books(title, author, editorial) VALUES('Martin Fierro', 'Jose Hernandez', 'Emece');
+INSERT INTO books(title, author, editorial) VALUES('Aprenda PHP', 'Mario Molina', 'Emece');
+INSERT INTO books(title, author, editorial) VALUES('Cervantes y el quijote', 'Borges', 'Piados');
+INSERT INTO books(title, author, editorial) VALUES('Matematicas estas ahi', 'Paenza', 'Paidos');
+
+SELECT id, title, author, editorial FROM books;
+
+INSERT INTO books(id, title, author, editorial) VALUES(6, 'Martin Fierro', 'Jose Hernandez', 'Paidos' );
+INSERT INTO BOOKS(id, title, author, editorial) VALUES(2, 'Martin Fierro', 'Jose Hernandez', 'Planeta');
+INSERT INTO books(id, title, author, editorial) VALUES(15, 'Harry Potter  y la piedra filosofal', 'J.K. Rowling', 'Emece' );
+INSERT INTO books(title, author, editorial) VALUES('Harry potter y la camara secreta', 'J.K. Rowling', 'Emece');
+INSERT INTO books(id, title, author, editorial) VALUES(0, 'Alicia en el pais de las maravillass', 'Lewis Carroll', 'Emece');
+INSERT INTO books(id, title, author, editorial) VALUES(-5, 'Alicia a traves del espejo', 'Lewis Carrol', 'Planeta');
+
+
+SELECT * FROM books;

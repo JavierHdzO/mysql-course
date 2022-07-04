@@ -1,0 +1,15 @@
+/*
+CREATE TABLE users (
+Nombre varchar(30),
+Clave varchar(10)
+);
+
+
+
+INSERT INTO users(Nombre, Clave) VALUES ('Francisco Javier', '1234567890');
+
+SELECT * FROM users;
+
+*/
+
+SELECT Nombre,Clave FROM users;  

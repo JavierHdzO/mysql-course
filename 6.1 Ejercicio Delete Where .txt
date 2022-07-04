@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS agenda;
+
+CREATE TABLE agenda(
+	apellido varchar(30),
+    nombre varchar(20),
+    domicilio varchar(30),
+    telefono varchar(11)
+);
+
+DESCRIBE agenda;
+
+INSERT INTO agenda(apellido, nombre, domicilio, telefono) VALUES('Mores', 'Alberto','Colon 123', 4234567);
+INSERT INTO agenda(apellido, nombre, domicilio, telefono) VALUES('Torres', 'Juan','Avellaneda 135', 4458787);
+INSERT INTO agenda(apellido, nombre, domicilio, telefono) VALUES('Lopez', 'Mariana','Urquiza 333', 4545454);
+INSERT INTO agenda(apellido, nombre, domicilio, telefono) VALUES('Lopez', 'Susana', 'Urquiza 333', 4545454);
+INSERT INTO agenda(apellido, nombre, domicilio, telefono) VALUES('Peralta', 'Susana', 'Gral. Paz 1234', 4123456 );
+
+set SQL_SAFE_UPDATES = 0;
+
+DELETE FROM agenda WHERE nombre = 'Juan';
+
+DELETE FROM agenda WHERE telefono = 4545454;
+
+SELECT * FROM agenda;

@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS Movies;
+
+CREATE TABLE Movies(
+	id integer unsigned AUTO_INCREMENT,
+    title varchar(30) NOT NULL,
+    actor varchar(30),
+    leng integer unsigned,
+    PRIMARY KEY (id)
+);
+
+DESCRIBE Movies;

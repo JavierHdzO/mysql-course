@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS Users;
+
+CREATE TABLE Users(
+	name varchar(30),
+    id varchar(10),
+    PRIMARY KEY(name)
+);
+
+DESCRIBE Users;
+
+INSERT INTO Users(name, id) VALUES('Leonardo', 'payaso');
+INSERT INTO Users(name, id) VALUES('MarioPerez', 'Marito');
+INSERT INTO Users(name, id) VALUES('Marcelo', 'River');
+INSERT INTO Users(name, id) VALUES('Gustavo', 'River');
+
+INSERT INTO Users(name, id) VALUES('Maria', 'River');
+
+/*NOW U CAN USE SQL_SAFE_UPDATES=1 TO PROTECT DATA FROM UR DATABASE*/
+/*
+SET SQL_SAFE_UPDATES = 1;
+
+DELETE FROM Users WHERE name='Maria';
+*/

@@ -1,0 +1,21 @@
+/*
+CREATE DATABASE CursoMySql;
+USE CursoMySql;
+
+Show TABLES;
+
+CREATE TABLE Users(
+	Nombre varchar(10),
+    Clave varchar(10)
+);
+
+SHOW TABLES;
+
+DESCRIBE users;
+
+DROP TABLE users;
+*/
+
+Show TABLES;
+
+DROP TABLE IF EXISTS users;

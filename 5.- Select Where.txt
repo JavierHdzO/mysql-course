@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS Users;
+
+CREATE TABLE Users(
+	name varchar(30),
+    clave varchar(10)
+);
+
+DESCRIBE Users;
+
+INSERT INTO Users(name, clave) VALUES('Leonardo', 'payaso');
+INSERT INTO Users(name, clave) VALUES('Mario Perez', 'Mario');
+INSERT INTO Users(name, clave) VALUES('Marcelo', 'bocajunior');
+INSERT INTO Users(name, clave) VALUES('Gustavo','bocajunior');
+
+SELECT name,clave FROM Users;
+
+SELECT name,clave FROM Users WHERE name='Leonardo';
+
+SELECT name,clave FROM Users WHERE clave='bocajunior';
+
+SELECT name,clave FROM Users Where clave='river';

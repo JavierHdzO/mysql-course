@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS agenda;
+
+CREATE TABLE agenda(
+	nombre varchar(20),
+    domicilio varchar(30),
+    telefono varchar(11)
+);
+
+SHOW TABLES;
+
+DESCRIBE agenda;
+
+INSERT INTO agenda (nombre,domicilio,telefono)  VALUES('Alberto Mores', 'Colon 123', '4234567');
+INSERT INTO agenda (nombre, domicilio, telefono) VALUES('Juan Torres', 'Avellaneda 135', '4458787');
+
+SELECT nombre,domicilio,telefono FROM agenda;
+
+DROP TABLE IF EXISTS agenda;
+
+DROP TABLE agenda;

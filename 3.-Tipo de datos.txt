@@ -1,0 +1,19 @@
+/*
+
+CREATE TABLE BOOK(
+	title varchar(40),
+    author varchar(20),
+    editorial varchar(15),
+    price float,
+    amount integer
+);
+
+INSERT INTO BOOK(title, author, editorial, price, amount) VALUES('El aleph','Borges','Emece',45.5,100);
+INSERT INTO BOOK(title, author, editorial, price, amount) VALUES('Alicia en el pais de las maravillas', 'Lewis Carroll', 'Planeta',25.0,200);
+INSERT INTO BOOK(title, author, editorial, price, amount) VALUES('Matematicas estas ahi', 'Paenza', 'Planeta', 15.0,200);
+
+
+SELECT title, author, editorial, price, amount FROM BOOK;
+*/
+
+
